@@ -1,6 +1,7 @@
 import cmd
 import os
 import requests
+import json
 
 class MyCLI(cmd.Cmd):
     prompt = '>> '
@@ -22,7 +23,7 @@ class MyCLI(cmd.Cmd):
 
         if response.status_code == 200:
             data = response.json()
-            print(data)
+            print(json.dumps(data, indent = 4))
         else:
             print(f"Request failed with status code {response.status_code}")
 

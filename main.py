@@ -4,7 +4,7 @@ import requests
 
 class MyCLI(cmd.Cmd):
     prompt = '>> '
-    intro = 'Welcome to get GITHUB user activity CLI of PeterBits. Type "help" for available commands.'
+    intro = 'Welcome to the GitHub user activity CLI of PeterBits. Type "help" for available commands.'
     
 
     def do_hello(self, _):
